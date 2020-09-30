@@ -1,2 +1,2 @@
-# TickTackToe
- A two-player text-based classic game!
+# TicTacToe
+ A two-player text-based classic

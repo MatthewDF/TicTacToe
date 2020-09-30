@@ -1,5 +1,8 @@
+#!/usr/bin/env python3
+
 import sys
 from art import *
+
 
 # A game where two players enter their names and take turns placing their game piece, an X or O, on a 3x3 grid.
 # A player wins when they have three of their pieces in a row!
@@ -31,7 +34,7 @@ class GameData:
     }
 
     def draw(draw_object):
-        draw_dict = {"Intro": text2art("Tick, Tack, Toe!!"),
+        draw_dict = {"Intro": text2art("Tic, Tac, Toe!!"),
                      "Prompt": "Enter your grid choice (A1, B3, C2, etc): ",
                      }
 
@@ -267,7 +270,7 @@ def is_winner(current_player, grid_data):
         sys.exit()
 
 
-class GameFunctions:
+def main():
     draw = GameData.draw
     gd = GameData.grid_data
 
@@ -320,3 +323,6 @@ class GameFunctions:
 
         is_winner(current_player, gd)
 
+
+if __name__ == "__main__":
+    main()
