@@ -23,8 +23,8 @@ class Player:
 class GameData:
     # Class for organizing and storing game variables
 
-    def __init__(self):
-        None
+    def __init__(self, grid_data):
+        self.grid_data = grid_data
 
     # Every grid intersection has a starting value of '_' and should be replaced by game functions with either an X or O
     grid_data = {
